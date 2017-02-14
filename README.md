@@ -1,33 +1,7 @@
-# session-exam
 
 
+# 说明
 
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-```shell
-$ npm install
-$ npm run dev
-$ open http://localhost:7001/news
-```
-
-### Deploy
-
-Use `EGG_SERVER_ENV=prod` to enable prod mode
-
-```shell
-$ EGG_SERVER_ENV=prod npm start
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+* 访问http://127.0.0.1:7001/session1 在service中设置session＝{session:"1"}
+* 访问http://127.0.0.1:7001/session2 在service中设置session＝{session:"2"}
+* 访问http://127.0.0.1:7001/session 查看真正的session，发现按照以上的顺序改变session，结果依然是{session:"1"}
